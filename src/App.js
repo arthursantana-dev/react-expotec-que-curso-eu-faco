@@ -6,7 +6,7 @@ function App() {
 	<nav className="navbar navbar-expand-lg bg-body-tertiary nav">
 		<div classNameName="container-fluid">
 			<span>
-				<img id="img-navbar" src="./assets/logo-colorida-simples.png"/>
+				<img id="img-navbar" src={require("./assets/logo-colorida-simples.png")}/>
 				<h1>Que Curso eu Faço?</h1>
 			</span>
 			<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,7 +31,7 @@ function App() {
 	</nav>
 
 	<section className="hero">
-		<img src="./assets/logo-colorida-longa.png" alt=""/>
+		<img src={require("./assets/logo-colorida-longa.png")} alt=""/>
 		<p>
 			Quer entrar na Etec mas não sabe qual o melhor curso pra você? Tire sua dúvida aqui!
 		</p>
