@@ -24,37 +24,36 @@ export default function Test(props) {
 
 
 	const fixedData = [
-		new Question('Gosto de Matemática, em especial de Geometria e Álgebra', 'muito/pouco', 5, 5, 5, 4),
-		new Question('Lido bem com Pessoas', 'muito/pouco', 5, 3, 3, 4),
-		new Question('Curto robôs', 'muito/pouco', 3, 5, 5, 3),
-		new Question('Me identifico com as Ciências Exatas', 'muito/pouco', 4, 5, 5, 4),
-		new Question('Me dou bem com problemas lógicos (cubo-mágico, xadrez, damas...)', 'muito/pouco', 4, 5, 3, 3),
-		new Question('Gostava de brinquedos de construção na infância, como Lego', 'muito/pouco', 3, 4, 3, 5),
-		new Question('Tenho afinidade com as Ciências Humanas', 'sim/nao', 5, 3, 3, 5),
-		new Question('Gosto de videogames', 'muito/pouco', 2, 5, 4, 3),
-		new Question('Tenho senso de liderança', 'sim/nao', 5, 3, 3, 4),
-		new Question('Prefiro trabalhar sozinho', 'sim/nao', 3, 5, 4, 3),
-		new Question('Gosto de ler/escrever histórias e textos', 'sim/nao', 5, 5, 3, 3),
-		new Question('Sou criativo(a)', 'muito/pouco', 5, 5, 3, 4),
-		new Question('Sou organizado(a)', 'muito/pouco', 5, 5, 3, 3),
-		new Question('Sou fanático por tecnologia', 'muito/pouco', 3, 5, 4, 3),
-		new Question('Gosto de desenhar', 'muito/pouco', 3, 3, 4, 5),
-		new Question('Tenho interesse em automação residencial', 'sim/nao', 3, 4, 5, 3),
-		new Question('Gosto de trabalhar com circuitos eletrônicos', 'muito/pouco', 3, 4, 5, 3),
-		new Question('Tenho afinidade com processos industriais', 'muito/pouco', 4, 3, 5, 3),
-		new Question('Sou fascinado por arquitetura e construção civil', 'sim/nao', 4, 3, 3, 5),
-		new Question('Gosto de cuidar de detalhes em projetos', 'muito/pouco', 4, 4, 3, 4),
-		new Question('Prefiro trabalhar em um ambiente de escritório', 'sim/nao', 5, 5, 3, 3),
-		new Question('Tenho interesse em inteligência artificial', 'sim/nao', 3, 5, 4, 3),
-		new Question('Gosto de participar de competições acadêmicas', 'muito/pouco', 4, 5, 4, 3),
-		new Question('Tenho aptidão para lidar com ferramentas de design gráfico', 'muito/pouco', 3, 5, 4, 4),
-		new Question('Tenho facilidade em explicar conceitos complexos', 'muito/pouco', 5, 4, 3, 3),
-		new Question('Gosto de trabalhar ao ar livre', 'sim/nao', 3, 3, 3, 5),
-		new Question('Tenho habilidades artísticas', 'muito/pouco', 3, 3, 4, 5),
-		new Question('Gosto de estudar processos de produção', 'muito/pouco', 4, 3, 5, 3),
-		new Question('Tenho facilidade em liderar equipes', 'sim/nao', 5, 4, 3, 4),
-		new Question('Gosto de aprender sobre novas tecnologias', 'muito/pouco', 4, 5, 4, 3),
-		new Question('Tenho interesse em empreendedorismo', 'sim/nao', 5, 4, 3, 4),
+		new Question('Gosto de Matemática 🧮📐', 'muito/pouco', 5, 5, 5, 4),
+		new Question('Lido bem com Pessoas 🏬', 'muito/pouco', 5, 3, 3, 4),
+		new Question('Curto robôs 🤖', 'muito/pouco', 3, 5, 5, 3),
+		new Question('Me identifico com as Ciências Exatas 🔭🔬', 'muito/pouco', 4, 5, 5, 4),
+		new Question('Gosto de cubo-mágico, xadrez, damas e outros jogos ♟️', 'muito/pouco', 4, 5, 3, 3),
+		new Question('Gostava de brinquedos de construção na infância, como Lego 🧰', 'muito/pouco', 3, 4, 3, 5),
+		new Question('Me identifico as Ciências Humanas 📖⏳', 'muito/pouco', 5, 3, 3, 5),
+		new Question('Gosto de videogames 🎮', 'muito/pouco', 2, 5, 4, 3),
+		new Question('Tenho senso de liderança 📈', 'sim/nao', 5, 3, 3, 4),
+		new Question('Prefiro fazer trabalhos sozinho(a) 🧍', 'sim/nao', 3, 5, 4, 3),
+		new Question('Gosto de ler/escrever histórias e textos 📖✍️', 'sim/nao', 5, 5, 3, 3),
+		new Question('Sou criativo(a) 💭', 'muito/pouco', 5, 5, 3, 4),
+		new Question('Sou organizado(a) 📚', 'muito/pouco', 5, 5, 3, 3),
+		new Question('Sou fanático(a) por tecnologia 👩‍💻👨‍💻', 'muito/pouco', 3, 5, 4, 3),
+		new Question('Gosto de desenhar ✏️🖌️', 'muito/pouco', 3, 3, 4, 5),
+		new Question('Casas inteligentes me chamam a atenção 🏡📱', 'sim/nao', 3, 4, 5, 3),
+		new Question('Sou curioso(a) sobre como as empresas funcionam 🏢📋', 'muito/pouco', 5, 4, 4, 3),
+		new Question('Sou curioso(a) sobre como fábricas funcionam 🎛️⚙️', 'muito/pouco', 4, 3, 5, 3),
+		new Question('Sou fascinado por arquitetura e construção civil 👷🧱', 'sim/nao', 4, 3, 3, 5),
+		new Question('Gosto de cuidar de detalhes em projetos 📋', 'muito/pouco', 4, 4, 3, 4),
+		new Question('Gosto de ambientes de escritório 🏢', 'muito/pouco', 5, 5, 3, 3),
+		new Question('Tenho interesse em inteligência artificial 🤖💭', 'sim/nao', 3, 5, 4, 3),
+		new Question('Gosto de competições acadêmicas 🏅', 'muito/pouco', 4, 5, 4, 3),
+		new Question('Gosto e mexo com design gráfico (Photoshop, CorelDraw, etc.) 💻🖼️', 'muito/pouco', 3, 5, 4, 4),
+		new Question('Consigo explicar coisas difíceis facilmente ⚙️💭', 'muito/pouco', 5, 4, 3, 3),
+		new Question('Gosto de trabalhar ao ar livre 🏞️🏕️', 'sim/nao', 3, 3, 3, 5),
+		new Question('Tenho habilidades artísticas 🎨🖌️✍️', 'muito/pouco', 3, 3, 4, 5),
+		new Question('Sou curioso(a) sobre tudo 🤔', 'sim/nao', 5, 4, 3, 4),
+		new Question('Gosto de aprender sobre novas tecnologias 💻', 'muito/pouco', 4, 5, 4, 3),
+		new Question('Tenho interesse em empreendedorismo 🏢', 'sim/nao', 5, 4, 3, 4),
 
 	]
 
@@ -66,7 +65,7 @@ export default function Test(props) {
 		return array;
 	}
 
-	useEffect(() => { setData(shuffleArray(fixedData)) }, [])
+	useEffect(() => { setData(shuffleArray(fixedData)); window.scrollTo({top: 0, behavior: 'smooth'}) }, [])
 
 	function calculateCourse() {
 		setIsProcessingTest(true)
@@ -183,7 +182,7 @@ export default function Test(props) {
 		<section className="hero">
 			<img src={require("../assets/logo-colorida-longa.png")} alt="" />
 			<p>
-				Quer entrar na Etec mas não sabe qual o melhor curso pra você? Tire sua dúvida aqui!
+				Quer entrar na Etec mas não sabe qual o melhor curso do ETIM pra você? Tire sua dúvida aqui!
 			</p>
 			<a href="#hr">
 				<button className="btn btn-primary btn-lg submit-button">
@@ -214,9 +213,6 @@ export default function Test(props) {
 					return <QuestionComponent key={i} i={i} q={q} maxName={maxName} minName={minName} radioButtonToAnswerId={radioButtonToAnswerId} setRadioButtonToAnswerId={setRadioButtonToAnswerId}
 						totalAnswers={totalAnswers} setTotalAnswers={setTotalAnswers} answersValues={aswersValues} setAnswersValues={setAnswersValues} />
 				})
-			}
-			{
-
 			}
 		</main>
 		<div id="div-submit">

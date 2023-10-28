@@ -4,6 +4,7 @@ import SingleCourseAffinity from "./SingleCourseAffinity";
 import './TestResult.css'
 
 export default function TestResult(props) {
+	window.scrollTo({top: 0, behavior: 'smooth'})
 	
 	const coursesInfo = [
 		{
