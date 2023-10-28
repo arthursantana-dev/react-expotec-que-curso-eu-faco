@@ -2,10 +2,11 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 import SingleCourseAffinity from "./SingleCourseAffinity";
 import './TestResult.css'
+import JSConfetti from "js-confetti";
 
 export default function TestResult(props) {
-	window.scrollTo({top: 0, behavior: 'smooth'})
-	
+	window.scrollTo({ top: 0, behavior: 'smooth' })
+
 	const coursesInfo = [
 		{
 			course: "Administração",
@@ -21,7 +22,7 @@ export default function TestResult(props) {
 			content: `Sua afinidade com Mecatrônica destaca sua habilidade em lidar com desafios que exigem uma abordagem multidisciplinar. Este curso combina elementos da <strong>engenharia mecânica, eletrônica e de controle</strong>, e tenho certeza de que sua capacidade de pensar de forma holística será uma vantagem valiosa.<br><br>Além disso, Mecatrônica exige <strong>criatividade e inovação</strong>, e estou certo de que você trará ideias frescas para resolver problemas complexos. Sua dedicação aos estudos e o interesse demonstrado na interseção entre mecânica e eletrônica são qualidades que certamente o destacarão no curso.`
 		}
 	]
-	
+
 	const coursesAffinity = [
 		{
 			name: 'adm',
@@ -43,7 +44,7 @@ export default function TestResult(props) {
 			fullName: 'Edificações',
 			affinity: props.testData.edf
 		}
-	
+
 	]
 
 	coursesAffinity.sort((a, b) => {
@@ -52,7 +53,15 @@ export default function TestResult(props) {
 		return Math.random() - 0.5
 	})
 
-	const courseDescription = coursesInfo.find(c => {return c.course == coursesAffinity[0].fullName}).content
+	const courseDescription = coursesInfo.find(c => { return c.course == coursesAffinity[0].fullName }).content
+
+	setTimeout(() => {
+		const jsConfetti = new JSConfetti()
+		jsConfetti.addConfetti({
+			confettiColors: ['rgba(0, 120, 189, 1)', 'rgba(225, 4, 220, 1)', 'rgba(240, 181, 27, 1)', 'rgba(254, 98, 39, 1)']
+		})
+	}, 200)
+
 
 	return (
 		<>
@@ -61,17 +70,17 @@ export default function TestResult(props) {
 			<main className="result">
 				<div class="course-badge-wrapper">
 					{
-						props.testData.idealCourse == 'ds'? <>
+						props.testData.idealCourse == 'ds' ? <>
 							<div class="icon-wrapper">
-							<img class="crown-icon" src="./assets/crown-solid.svg"/>
+								<img class="crown-icon" src="./assets/crown-solid.svg" />
 							</div>
 							<h1 class="badge course-badge">O melhor curso!📈</h1>
-							</> : ''
+						</> : ''
 					}
 
 					{
-						props.testData.idealCourse == 'adm'? <>
-						<h1 class="badge course-badge adm-badge">Não! ADM não!😣</h1></> : ''
+						props.testData.idealCourse == 'adm' ? <>
+							<h1 class="badge course-badge adm-badge">Não! ADM não!😣</h1></> : ''
 					}
 				</div>
 
@@ -79,15 +88,15 @@ export default function TestResult(props) {
 					<img class="main__img__img" src={require(`../assets/${props.testData.idealCourse}.png`)} />
 				</div>
 
-				<p class="course-description" dangerouslySetInnerHTML={{__html: courseDescription}}>
-					
+				<p class="course-description" dangerouslySetInnerHTML={{ __html: courseDescription }}>
+
 				</p>
 
 				<section class="courses-data">
 					<h2>Afinidade com os cursos</h2>
 					{
 						coursesAffinity.map((c, i) => {
-							return <SingleCourseAffinity key={i} c={c}/>
+							return <SingleCourseAffinity key={i} c={c} />
 						})
 					}
 
