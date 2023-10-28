@@ -1,0 +1,89 @@
+main.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+main.result h1, main.result h2 {
+	font-weight: bold;
+}
+
+main.result .main__img {
+	width: fit-content;
+	display: flex;
+	margin: auto;
+}
+
+main.result .main__img img {
+	width: 87%;
+	margin: auto;
+	margin-block: 2rem;
+}
+
+main.result p.course-description {
+    font-size: 1.3rem;
+}
+
+main.result section.courses-data {
+    width: 100%;
+	border: 1px solid rgb(225, 225, 225);
+	padding: 1rem;
+	border-radius: .5rem;
+	margin-block: 1rem;
+	box-shadow: var(--shadow);
+}
+
+main.result h2 {
+	margin-bottom: 0.8rem;
+}
+
+main.result span.course__info {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main.result .course__info p {
+	font-size: 1.1rem;
+}
+
+main.result p.course__affinity {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+main.result .courses-data__obsertation {
+	color: gray;
+	font-weight: 300;
+}
+
+main.result .badge {
+    position: relative;
+    font-size: 1.13rem;
+    top: 5rem;
+	background-color: purple;
+}
+
+main.result .adm-badge {
+	background: gray;
+}
+
+main.result div.icon-wrapper {
+	position: relative;
+    top: 6rem;
+    width: 3.75rem;
+    right: 1rem;
+    z-index: 2;
+    rotate: 342deg;
+}
+
+main.result img.crown-icon {
+	filter: brightness(0) saturate(100%) invert(88%) sepia(33%) saturate(3009%) hue-rotate(345deg) brightness(105%) contrast(102%);
+	
+    position: relative;
+    width: 50px;
+    bottom: 0.5rem;
+}

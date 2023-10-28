@@ -53,7 +53,7 @@ img#img-navbar {
 .nav {
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 4;
   box-shadow: var(--shadow);
   border-radius: 0 0 0.9rem 0.9rem;
   display: flex;
@@ -65,6 +65,10 @@ nav span {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+nav a {
+	cursor: pointer;
 }
 
 nav h1 {
@@ -97,7 +101,6 @@ nav h1 {
 .nav-progress-bar {
   height: 100%;
   background: #efefef;
-  width: 100%;
   transition: 0.5s;
 }
 
@@ -211,10 +214,10 @@ div.radio-wrapper {
   align-items: center;
 }
 
-div#submit{
+div#div-submit{
   width: 100%;
-  display: 'flex';
-  justify-content: 'center';
+  display: flex;
+  justify-content: center;
 }
 
 .input-radio-wrapper {
@@ -298,6 +301,8 @@ img#img-footer {
   border: 7px solid #f3f3f3;
 
   border-top: 7px solid rgb(169, 169, 169);
+
+  margin: auto;
 
   border-radius: 50%;
   width: 3rem;
