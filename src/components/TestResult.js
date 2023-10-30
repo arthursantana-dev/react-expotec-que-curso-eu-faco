@@ -99,6 +99,9 @@ export default function TestResult(props) {
 							return <SingleCourseAffinity key={i} c={c} />
 						})
 					}
+<hr><p class="courses-data__obsertation">
+O percentual de afinidade pode somar para mais de 100% pois considera como total somente os atributos relacionados ao próprio curso.
+</p>
 
 				</section>
 
