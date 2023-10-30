@@ -9,6 +9,8 @@ function App() {
 
 	// return <TestResult setHasAnsweredTest={setHasAnsweredTest} hasAnsweredTest={hasAnsweredTest} testData={testData}/>
 
+	
+
 	if (hasAnsweredTest) return <TestResult setHasAnsweredTest={setHasAnsweredTest} hasAnsweredTest={hasAnsweredTest} testData={testData}/>
 
 	return  <Test setHasAnsweredTest={setHasAnsweredTest} setTestData={setTestData}/>

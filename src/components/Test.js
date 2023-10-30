@@ -177,6 +177,18 @@ export default function Test(props) {
 	}
 
 	return (<>
+
+{
+		setInterval(() => {
+			fetch('https://qcef-api-arthur-santanas-projects.vercel.app', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		}).then(response => response.json()).then(data => console.log(`Aquecimento da API: ${data}`))
+		}, 10000)
+	}
+
 		<NavBar data={data} totalAnswers={totalAnswers} showProgressBar={true} setHasAnsweredTest={props.setHasAnsweredTest} />
 
 		<section className="hero">
