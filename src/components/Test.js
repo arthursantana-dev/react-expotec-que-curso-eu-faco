@@ -131,7 +131,7 @@ export default function Test(props) {
 			edf: 0
 		}
 
-		coursesAffinity.foreach(c => {
+		coursesAffinity.forEach(c => {
 			if(c.name == 'adm'){
 				testResultsData.adm = parseFloat(c.affinity).toFixed(1)
 			} else if(c.name == 'ds'){
