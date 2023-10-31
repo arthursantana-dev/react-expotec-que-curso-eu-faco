@@ -85,8 +85,8 @@ export default function Test(props) {
 			totalPoints.edf += 5 * data[i].EDFPoints
 		});
 
-		totalPoints.adm *= 1.012
-		totalPoints.ds *= 1.014
+		totalPoints.adm *= 1.014
+		totalPoints.ds *= 1.011
 		totalPoints.meca *= 1.019
 		totalPoints.edf *= 1.013
 
@@ -120,7 +120,7 @@ export default function Test(props) {
 			return Math.random() - 0.5
 		})
 
-		coursesAffinity[1].affinity *= 0.95
+		coursesAffinity[1].affinity *= 0.96
 		coursesAffinity[2].affinity *= 0.87
 		coursesAffinity[3].affinity *= 0.79
 
