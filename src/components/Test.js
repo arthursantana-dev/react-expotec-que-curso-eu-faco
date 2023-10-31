@@ -42,7 +42,7 @@ export default function Test(props) {
 		new Question('Casas inteligentes me chamam a atenção 🏡📱', 'sim/nao', 1, 4, 5, 5),
 		new Question('Sou curioso(a) sobre como as empresas funcionam 🏢📋', 'muito/pouco', 5, 3, 4, 3),
 		new Question('Sou curioso(a) sobre como fábricas funcionam 🎛️⚙️', 'muito/pouco', 4, 3, 5, 3),
-		new Question('Sou fascinado por arquitetura e construção civil 👷🧱', 'sim/nao', 2, 1, 2, 5),
+		new Question('Sou fascinado(a) por arquitetura e construção civil 👷🧱', 'sim/nao', 2, 1, 2, 5),
 		new Question('Gosto de cuidar de detalhes em projetos 📋', 'muito/pouco', 4, 4, 3, 4),
 		new Question('Gosto de ambientes de escritório 🏢', 'muito/pouco', 5, 5, 3, 3),
 		new Question('Tenho interesse em inteligência artificial 🤖💭', 'sim/nao', 2, 5, 4, 2),
@@ -85,10 +85,10 @@ export default function Test(props) {
 			totalPoints.edf += 5 * data[i].EDFPoints
 		});
 
-		totalPoints.adm *= 1.02
-		totalPoints.ds *= 1.01
-		totalPoints.meca *= 1.05
-		totalPoints.edf *= 1.02
+		totalPoints.adm *= 1.012
+		totalPoints.ds *= 1.014
+		totalPoints.meca *= 1.019
+		totalPoints.edf *= 1.013
 
 		const coursesAffinity = [
 			{
@@ -114,18 +114,36 @@ export default function Test(props) {
 
 		]
 
-		let testResultsData = {
-			adm: parseFloat(coursesAffinity[0].affinity).toFixed(1),
-			ds: parseFloat(coursesAffinity[1].affinity).toFixed(1),
-			meca: parseFloat(coursesAffinity[2].affinity).toFixed(1),
-			edf: parseFloat(coursesAffinity[3].affinity).toFixed(1)
-		}
-
 		coursesAffinity.sort((a, b) => {
 			if (b.affinity - a.affinity != 0) return b.affinity - a.affinity
 
 			return Math.random() - 0.5
 		})
+
+		coursesAffinity[1].affinity *= 0.95
+		coursesAffinity[2].affinity *= 0.87
+		coursesAffinity[3].affinity *= 0.79
+
+		let testResultsData = {
+			adm: 0,
+			ds: 0,
+			meca: 0,
+			edf: 0
+		}
+
+		coursesAffinity.foreach(c => {
+			if(c.name == 'adm'){
+				testResultsData.adm = parseFloat(c.affinity).toFixed(1)
+			} else if(c.name == 'ds'){
+				testResultsData.ds = parseFloat(c.affinity).toFixed(1)
+			} else if(c.name == 'meca'){
+				testResultsData.meca = parseFloat(c.affinity).toFixed(1)
+			} else if(c.name == 'edf'){
+				testResultsData.edf = parseFloat(c.affinity).toFixed(1)
+			} 
+		})
+
+		
 
 		testResultsData.idealCourse = coursesAffinity[0].name
 
