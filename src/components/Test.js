@@ -37,7 +37,7 @@ export default function Test(props) {
 		// new Question('Gosto de ler/escrever histórias e textos 📖✍️', 'sim/nao', 5, 4, 2, 2),
 		new Question('Sou criativo(a) 💭', 'muito/pouco', 5, 5, 3, 4),
 		new Question('Sou organizado(a) 📚', 'muito/pouco', 5, 5, 4, 3),
-		new Question('Sou fanático(a) por tecnologia 👩‍💻👨‍💻', 'muito/pouco', 2, 5, 4, 3),
+		// new Question('Sou fanático(a) por tecnologia 👩‍💻👨‍💻', 'muito/pouco', 2, 5, 4, 3),
 		new Question('Gosto de desenhar ✏️🖌️', 'muito/pouco', 2, 2, 4, 5),
 		// new Question('Casas inteligentes me chamam a atenção 🏡📱', 'sim/nao', 1, 4, 5, 5),
 		// new Question('Sou curioso(a) sobre como as empresas funcionam 🏢📋', 'muito/pouco', 5, 3, 4, 3),
