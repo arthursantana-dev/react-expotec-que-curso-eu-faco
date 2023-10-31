@@ -43,17 +43,17 @@ export default function Test(props) {
 		// new Question('Sou curioso(a) sobre como as empresas funcionam 🏢📋', 'muito/pouco', 5, 3, 4, 3),
 		new Question('Sou curioso(a) sobre como fábricas funcionam 🎛️⚙️', 'muito/pouco', 4, 3, 5, 3),
 		new Question('Sou fascinado(a) por arquitetura e construção civil 👷🧱', 'sim/nao', 2, 1, 2, 5),
-		new Question('Gosto de cuidar de detalhes em projetos 📋', 'muito/pouco', 4, 4, 3, 4),
+		// new Question('Gosto de cuidar de detalhes em projetos 📋', 'muito/pouco', 4, 4, 3, 4),
 		// new Question('Gosto de ambientes de escritório 🏢', 'muito/pouco', 5, 5, 3, 3),
 		new Question('Tenho interesse em inteligência artificial 🤖💭', 'sim/nao', 2, 5, 4, 2),
 		// new Question('Gosto de competições acadêmicas 🏅', 'muito/pouco', 4, 5, 4, 3),
 		// new Question('Gosto e mexo com design gráfico (Photoshop, CorelDraw, etc.) 💻🖼️', 'muito/pouco', 3, 5, 2, 3),
-		new Question('Consigo explicar coisas difíceis facilmente ⚙️💭', 'muito/pouco', 5, 5, 5, 3),
+		// new Question('Consigo explicar coisas difíceis facilmente ⚙️💭', 'muito/pouco', 5, 5, 5, 3),
 		new Question('Gosto de trabalhar ao ar livre 🏞️🏕️', 'sim/nao', 1, 1, 2, 5),
 		// new Question('Tenho habilidades artísticas 🎨🖌️✍️', 'muito/pouco', 1, 2, 4, 5),
 		// new Question('Sou curioso(a) sobre tudo 🤔', 'sim/nao', 5, 4, 3, 3),
 		// new Question('Gosto de aprender sobre novas tecnologias 💻', 'muito/pouco', 2, 5, 4, 2),
-		new Question('Tenho interesse em empreendedorismo 🏢', 'sim/nao', 5, 4, 1, 3),
+		// new Question('Tenho interesse em empreendedorismo 🏢', 'sim/nao', 5, 4, 1, 3),
 
 	]
 
